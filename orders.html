@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience the rich and diverse flavors of India with Indian Twist.">
+    <title>Indian Twist-cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="orders.css">
+
+</head>
+
+<body>
+    <div>
+        <header>
+            <div class="navbar" id="main">
+                <p class="name">Indian Twist</p>
+                <div class="search">
+                    <select class="search-select" aria-label="Search category">
+                        <option>All</option>
+                    </select>
+                    <input type="text" placeholder="Feeling hungry ? Discover the taste of India !" class="search-input"
+                        aria-label="Search input" />
+                    <div class="search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+
+                <div class="nav-right">
+                    <a href="index.html #home">Home</a>
+                    <a href="index.html #menu"">Menu</a>
+                <a href=" index.html #about">About</a>
+                    <a href="index.html #contact">Contact Us</a>
+                    <a href="orders.html"><i class="fa-solid fa-bag-shopping bag-icon"></i></a>
+
+                    <div class="profile-menu">
+                        <i class="fa-solid fa-user profile-icon"></i>
+                        <div class="dropdown" id="nav">
+                            <a href="login.html">Log-in</a>
+                            <a href="signup.html">Sign-up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+    </div>
+
+    <header>
+        <h1 class="ord-msg">Your Orders</h1>
+    </header>
+    <main>
+        <div id="orders-container">
+            <!-- Dynamic items will be added here -->
+            <p>No items in your order yet!</p>
+        </div>
+    </main>
+    <script src="orders.js" defer></script>
+    </body>
+    </html>

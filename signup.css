@@ -1,0 +1,273 @@
+/* Reset margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply background color for the whole page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffebcd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: rgba(19, 19, 19, 0.3);
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .name {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
+
+
+.navbar .search {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin: 0 20px;
+    max-width: 600px;
+    position: relative;
+}
+
+.search-select {
+    padding: 5.7px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.search-input {
+    flex: 1;
+    padding: 8px;
+    font-size: 0.8rem;
+    color: black;
+    border: 1px solid #ccc;
+    border-left: none;
+    outline: none;
+    border-radius: 0;
+}
+
+.search-icon {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 7.3px 10px;
+    border-radius: 0 4px 4px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+
+/* Navbar Links */
+.navbar .nav-right a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+}
+
+/* Hover effect */
+.navbar .nav-right a:hover {
+    transform: (1.1);
+    color: #ff4500;
+}
+
+#nav a{
+    color: #333;
+    font-size: 17px;
+}
+
+/* General navigation styling */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Profile menu container */
+.profile-menu {
+    position: relative;
+    display: inline-block;
+}
+
+/* Profile icon styling */
+.profile-icon {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Dropdown menu styling */
+.dropdown {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    color: #333;
+    min-width: 150px;
+    max-height: 100px; /* Limit the height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    border: 0.1px solid #cfcece;
+    border-radius: 2px;
+    
+}
+
+.dropdown a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #f1f1f1;
+    
+}
+
+.dropdown a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown a:last-child {
+    border-bottom: none;
+}
+
+/* Show dropdown on hover */
+.profile-menu:hover .dropdown {
+    display: block;
+}
+#nav a:hover {
+    background-color: white;
+    color: #ff6347;
+}
+
+
+/* Signup Section */
+.signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.signup-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 7px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 80px;
+}
+
+
+/* Header Text */
+.signup-container h1 {
+    font-size: 2.2rem;
+    color: #ff6347;
+    margin-bottom: 10px;
+}
+
+.signup-container .msg {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Form styling */
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-group label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+    padding-left: 10px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #ff6347;
+}
+
+/* Button styling */
+.signup-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff6347;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.signup-btn:hover {
+    background-color: #ff4500;
+}
+
+/* Link to login page */
+.link {
+    margin-top: 15px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.link a {
+    color: #007bff;
+    text-decoration: none;
+
+}
+
+.link a:hover {
+    text-decoration: underline;
+}
+.store {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #007bff;
+}
+.store:hover {
+    text-decoration: underline;
+}

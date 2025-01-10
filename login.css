@@ -1,0 +1,263 @@
+/* Reset margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffebcd;
+    /* Light food-themed background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 10px 20px;
+    background-color: rgba(50, 50, 50, 0.3);
+    color: white;
+    position: fixed; 
+    top: 0;
+    left: 0; 
+    width: 100%; 
+    z-index: 1000; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.navbar .name {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    white-space: nowrap; /* Prevents text wrapping */
+}
+
+.navbar .search {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin: 0 20px;
+    max-width: 600px;
+    position: relative;
+}
+
+.search-select {
+    padding: 5px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.search-input {
+    flex: 1;
+    padding: 6.6px;
+    font-size: 0.8rem;
+    color: black;
+    border: 1px solid #ccc;
+    border-left: none;
+    outline: none;
+    border-radius: 0;
+}
+
+.search-icon {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 7.5px 10px;
+    border-radius: 0 4px 4px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+
+/* Navbar Links */
+.navbar .nav-right a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+}
+
+.navbar .nav-right a:hover {
+    transform: (1.1);
+    color: #ff4500;
+}
+
+.navbar .nav-righ .dropdown a {
+    color: black;
+}
+
+
+/* General navigation styling */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Profile menu container */
+.profile-menu {
+    position: relative;
+    display: inline-block;
+}
+
+/* Profile icon styling */
+.profile-icon {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Dropdown menu styling */
+.dropdown {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    min-width: 150px;
+    max-height: 100px; /* Limit the height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    border: 0.1px solid #cfcece;
+    border-radius: 2px;
+    
+}
+
+.dropdown a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #f1f1f1;
+    
+}
+
+.dropdown a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown a:last-child {
+    border-bottom: none;
+}
+
+/* Show dropdown on hover */
+.profile-menu:hover .dropdown {
+    display: block;
+}
+
+#nav a:hover {
+    background-color: white;
+    color: #ff6347;
+    }
+
+#nav a {
+    color: #333;
+    font-size: 17px;
+}
+
+/* Login Container */
+.login-container {
+    width: 100%;
+    max-width: 450px;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Header */
+.login-container h1 {
+    font-size: 2rem;
+    color: #ff6347;
+    /* Tomato color for the food theme */
+    margin-bottom: 20px;
+}
+
+.login-container p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Form Styling */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-group label {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 7px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* Button Styling */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff6347;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.login-btn:hover {
+    background-color: #ff4500;
+    /* Darker tomato color */
+}
+
+/* Link to Sign Up */
+.link {
+    margin-top: 20px;
+    font-size: 0.5rem;
+}
+
+.link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}
+
+.store {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #007bff;
+}
+.store:hover {
+    text-decoration: underline;
+}
