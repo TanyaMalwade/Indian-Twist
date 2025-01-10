@@ -1,6 +1,6 @@
 # Indian-Twist
-Indian Twist Online Food Delivery App Overview---
-The Indian Twist Online Food Delivery App is a user-friendly web application designed to bring authentic Indian cuisine to customers' doorsteps. Here's a detailed breakdown of its features and functionality:
+Indian Twist Online Food Delivery web Overview---
+The Indian Twist Online Food Delivery web is a user-friendly web application designed to bring authentic Indian cuisine to customers' doorsteps. Here's a detailed breakdown of its features and functionality:
 Purpose: A web-based food delivery platform for Indian cuisine, connecting users with local restaurants for easy ordering.
 1)Home Page: Displays featured dishes, categories, and promotional offers using a visually appealing design.
 2)Menu Section: Lists available dishes with images, descriptions, and prices. Users can filter by categories (e.g., North Indian, South Indian).
