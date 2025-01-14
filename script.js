@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Save updated orders to localStorage
             localStorage.setItem('orders', JSON.stringify(orders));
 
-            alert(`${name} added to your order!`);
+            alert(`${name} added to your orders!`);
         });
     });
 
